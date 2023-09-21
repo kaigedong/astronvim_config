@@ -19,4 +19,6 @@ return {
   { import = "astrocommunity.pack.toml" },
   { import = "astrocommunity.pack.yaml" },
   { import = "astrocommunity.pack.lua" },
+
+  { import = "astrocommunity.editing-support.todo-comments-nvim" },
 }

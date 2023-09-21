@@ -15,6 +15,7 @@ return {
     shiftwidth = 4, -- shift 4 spaces when tab(how many columns of whitespace a “level of indentation” is worth?)
     smartindent = true, -- make indenting smarter again autoindent 根据上一行判断缩进，smartindent根据语法缩进
 
+    -- 修改lua/plugins/heirline.lua以设置signcolumn, number column, foldcolumn 排列顺序
     foldcolumn = "0", -- Folding options
   },
   g = {
