@@ -17,6 +17,7 @@ return {
 
     -- 修改lua/plugins/heirline.lua以设置signcolumn, number column, foldcolumn 排列顺序
     foldcolumn = "0", -- Folding options
+    showtabline = 0,
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader

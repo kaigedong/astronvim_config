@@ -49,11 +49,21 @@ return {
       opts.statuscolumn = vim.fn.has "nvim-0.9" == 1
           and {
             status.component.foldcolumn(),
-            status.component.fill(),
+            -- status.component.fill(),
             status.component.signcolumn(),
             status.component.numbercolumn(),
           }
         or nil
+    end,
+  },
+
+  {
+    "lewis6991/gitsigns.nvim",
+    opts = function(_, opts)
+      opts.signs = {
+        add = { text = "+" },
+        change = { text = "=" },
+      }
     end,
   },
 
