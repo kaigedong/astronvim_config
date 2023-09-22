@@ -20,4 +20,6 @@ return { -- Add the community repository of plugin specifications
   { import = "astrocommunity.pack.toml" },
   { import = "astrocommunity.pack.yaml" },
   { import = "astrocommunity.pack.lua" },
+
+  { import = "astrocommunity.bars-and-lines.lualine-nvim" },
 }

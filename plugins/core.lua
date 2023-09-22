@@ -1,3 +1,5 @@
+package.path = package.path .. ";/home/bobo/.config/nvim/lua/?.lua"
+
 return {
   -- customize alpha options
   {
@@ -34,6 +36,24 @@ return {
       opts.disable_max_lines = 100000
       opts.disable_max_size = 20000000
       return opts
+    end,
+  },
+
+  -- local status = require "astronvim.utils.status"
+  {
+    "rebelot/heirline.nvim",
+    optional = true,
+    opts = function(_, opts)
+      local status = require "astronvim.utils.status"
+      opts.statusline = nil
+      opts.statuscolumn = vim.fn.has "nvim-0.9" == 1
+          and {
+            status.component.foldcolumn(),
+            status.component.fill(),
+            status.component.signcolumn(),
+            status.component.numbercolumn(),
+          }
+        or nil
     end,
   },
 
