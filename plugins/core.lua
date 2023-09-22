@@ -20,6 +20,23 @@ return {
       return opts
     end,
   },
+
+  {
+    "nvim-treesitter/nvim-treesitter",
+    opts = function(_, opts)
+      opts.highlight.disable = function(_, bufnr) return vim.api.nvim_buf_line_count(bufnr) > 100000 end
+      return opts
+    end,
+  },
+  {
+    "stevearc/aerial.nvim",
+    opts = function(_, opts)
+      opts.disable_max_lines = 100000
+      opts.disable_max_size = 20000000
+      return opts
+    end,
+  },
+
   -- You can disable default plugins as follows:
   -- { "max397574/better-escape.nvim", enabled = false },
   { "lukas-reineke/indent-blankline.nvim", enabled = false },
