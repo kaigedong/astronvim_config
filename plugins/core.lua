@@ -67,6 +67,19 @@ return {
     end,
   },
 
+  {
+    "echasnovski/mini.files",
+    opts = function(_, opts)
+      opts.windows = {
+        max_number = math.huge, -- Maximum number of windows to show side by side
+        preview = true, -- Whether to show preview of file/directory under cursor
+        width_focus = 25, -- Width of focused window
+        width_nofocus = 25, -- Width of non-focused window
+        width_preview = 25, -- Width of preview window
+      }
+    end,
+  },
+
   -- You can disable default plugins as follows:
   -- { "max397574/better-escape.nvim", enabled = false },
   { "lukas-reineke/indent-blankline.nvim", enabled = false },
