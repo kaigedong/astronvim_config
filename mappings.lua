@@ -35,6 +35,11 @@ return {
 
     ["<A-,>"] = { "<C-o>", desc = "Go to previous location" },
     ["<A-.>"] = { "<C-i>", desc = "Go to next location" },
+
+    ["<leader>*"] = {
+      function() require("telescope.builtin").grep_string() end,
+      desc = "Find word under cursor",
+    },
   },
   t = {
     -- setting a mapping to false will disable it
