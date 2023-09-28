@@ -33,8 +33,8 @@ return {
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
 
-    ["<A-,>"] = { "<C-o>", desc = "Go to previous location" },
-    ["<A-.>"] = { "<C-i>", desc = "Go to next location" },
+    ["<A-,>"] = { "<C-o>|zz", desc = "Go to previous location" },
+    ["<A-.>"] = { "<C-i>|zz", desc = "Go to next location" },
 
     ["<leader>*"] = {
       function() require("telescope.builtin").grep_string() end,
