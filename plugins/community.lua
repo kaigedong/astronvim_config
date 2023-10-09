@@ -7,7 +7,7 @@ return { -- Add the community repository of plugin specifications
   { import = "astrocommunity.completion.copilot-lua-cmp" },
 
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
-  { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
+  -- { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
 
   { import = "astrocommunity.file-explorer.mini-files" },
   { import = "astrocommunity.git.git-blame-nvim" },

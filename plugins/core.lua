@@ -80,6 +80,21 @@ return {
     end,
   },
 
+  {
+    "nvim-lualine/lualine.nvim",
+    opts = function(_, opts)
+      opts.options = { theme = "codedark", section_separators = "", component_separators = "" }
+      opts.sections = {
+        lualine_a = { { "mode" } },
+        lualine_b = { { "filename", path = 1 } },
+        lualine_c = { "location", "progress" },
+        lualine_x = { "encoding", "fileformat" },
+        lualine_y = { "filetype" },
+        lualine_z = { "branch", "diff", "diagnostics" },
+      }
+    end,
+  },
+
   -- You can disable default plugins as follows:
   -- { "max397574/better-escape.nvim", enabled = false },
   { "lukas-reineke/indent-blankline.nvim", enabled = false },
