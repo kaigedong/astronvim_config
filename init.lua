@@ -1,4 +1,6 @@
 return {
+  vim.cmd "autocmd User TelescopePreviewerLoaded setlocal number",
+
   -- Configure AstroNvim updates
   updater = {
     remote = "origin", -- remote to use

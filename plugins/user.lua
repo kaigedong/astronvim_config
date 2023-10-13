@@ -9,7 +9,14 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
+
   "nordtheme/vim",
+  {
+    "nordtheme/vim",
+    init = function() -- init function runs before the plugin is loaded
+      vim.g.nord_cursor_line_number_background = 1
+    end,
+  },
 
   {
     "nvim-treesitter/nvim-treesitter-context",
