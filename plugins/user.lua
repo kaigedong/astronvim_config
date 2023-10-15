@@ -18,6 +18,8 @@ return {
     end,
   },
 
+  "Th3Whit3Wolf/space-nvim",
+
   {
     "nvim-treesitter/nvim-treesitter-context",
     event = "BufRead",
