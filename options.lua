@@ -8,6 +8,9 @@ return {
     signcolumn = "auto", -- sets vim.opt.signcolumn to auto
     wrap = false, -- sets vim.opt.wrap
 
+    guifont = "FiraCode Nerd Font:h20", -- sets vim.opt.guifont
+    termguicolors = true, -- sets vim.opt.termguicolors
+
     -- Tab的设置
     tabstop = 4, -- Tab 默认显示宽度是 8 个空格,修改Tab显示宽度：1 tab == 4 spaces，不修改按Tab键的行为
     expandtab = true, -- 根据tabstop 选项值把插入的 tab 替换成特定数目的空格
@@ -29,6 +32,11 @@ return {
     icons_enabled = true, -- disable icons in the UI (disable if no nerd font is available, requires :PackerSync after changing)
     ui_notifications_enabled = true, -- disable notifications when toggling UI elements
     resession_enabled = false, -- enable experimental resession.nvim session management (will be default in AstroNvim v4)
+
+    neovide_refresh_rate = 90, -- set the refresh rate of neovide (only works in neovide)
+    neovide_fullscreen = true, -- set neovide to fullscreen (only works in neovide)
+    neovide_confirm_quit = true, -- disable the quit confirmation in neovide (only works in neovide)
+    neovide_cursor_vfx_mode = "torpedo",
   },
 }
 -- If you need more control, you can use the function()...end notation
