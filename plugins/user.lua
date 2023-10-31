@@ -18,6 +18,13 @@ return {
     end,
   },
 
+  {
+    "xiantang/darcula-dark.nvim",
+    dependencies = {
+      "nvim-treesitter/nvim-treesitter",
+    },
+  },
+
   "Th3Whit3Wolf/space-nvim",
 
   {

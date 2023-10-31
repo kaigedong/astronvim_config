@@ -21,7 +21,8 @@ return {
 
   -- Set colorscheme to use
   -- colorscheme = "nord",
-  colorscheme = "space-nvim",
+  -- colorscheme = "space-nvim",
+  colorscheme = "darcula-dark",
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
