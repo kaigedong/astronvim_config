@@ -87,7 +87,7 @@ return {
       opts.sections = {
         lualine_a = { { "mode" } },
         lualine_b = { { "filename", path = 1 } },
-        lualine_c = { "location", "progress" },
+        lualine_c = { "location", "selectioncount", "progress" },
         lualine_x = { "encoding", "fileformat" },
         lualine_y = { "filetype" },
         lualine_z = { "branch", "diff", "diagnostics" },

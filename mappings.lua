@@ -36,9 +36,18 @@ return {
     ["<A-,>"] = { "<C-o>|zz", desc = "Go to previous location" },
     ["<A-.>"] = { "<C-i>|zz", desc = "Go to next location" },
 
+    -- ["<leader>*"] = {
+    --   function() require("telescope.builtin").find_files() end,
+    --   desc = "Find word under cursor",
+    -- },
+
     ["<leader>*"] = {
-      function() require("telescope.builtin").grep_string() end,
-      desc = "Find word under cursor",
+      function()
+        require("telescope.builtin").live_grep {
+          additional_args = function(args) return vim.list_extend(args, { "--hidden", "--no-ignore" }) end,
+        }
+      end,
+      desc = "Find words in all files",
     },
   },
   t = {
